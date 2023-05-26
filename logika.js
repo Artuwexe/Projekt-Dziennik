@@ -29,6 +29,7 @@ const pol = document.querySelector(".pol");
 const mat = document.querySelector(".Mat");
 const chem = document.querySelector(".chem");
 const hist = document.querySelector(".his");
+const oc = document.querySelector(".oc");
 let spr = 0;
 /*let polski = new Array(15)
 let matma = new Array(15)
@@ -150,6 +151,9 @@ submit2.addEventListener
     hist.innerHTML+=ocena.value+" "
     break;
   }
+});
+oc.addEventListener("mousedown", (e)=>{
+  oc.innerHTML = ocena.value;
 });
 //API
 var request = new XMLHttpRequest()
